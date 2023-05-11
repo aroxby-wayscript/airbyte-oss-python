@@ -11,10 +11,10 @@ Returns the openapi specification
 ### Example Usage
 
 ```python
-import airbyte_test
+import airbyte_oss
 
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 
 res = s.openapi.get_open_api_spec()

@@ -13,10 +13,10 @@ Run check connection for a given destination configuration
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.DestinationCoreConfig(
     connection_configuration='adipisci',
@@ -38,10 +38,10 @@ Run check connection for a given source configuration
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.SourceCoreConfig(
     connection_configuration='doloremque',
@@ -63,10 +63,10 @@ Run discover schema for a given source a source configuration
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.SourceCoreConfig(
     connection_configuration='autem',

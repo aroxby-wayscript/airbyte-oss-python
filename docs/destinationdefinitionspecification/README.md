@@ -15,10 +15,10 @@ Get specification for a destinationDefinition
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.DestinationDefinitionIDWithWorkspaceID(
     destination_definition_id='a08088d1-00ef-4ada-a00e-f0422eb2164c',

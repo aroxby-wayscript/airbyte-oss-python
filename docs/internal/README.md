@@ -16,10 +16,10 @@ Create or update the state for a connection.
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.ConnectionStateCreateOrUpdate(
     connection_id='00dec001-ac80-42e2-ac09-ff8f0f816ff3',
@@ -119,10 +119,10 @@ Get normalization status to determine if we can bypass normalization phase
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.JobIDRequestBody(
     id=564627,
@@ -141,10 +141,10 @@ For worker to set sync stats of a running attempt.
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.SaveStatsRequestBody(
     attempt_number=292177,
@@ -186,10 +186,10 @@ For worker to save the AttemptSyncConfig for an attempt.
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.SaveAttemptSyncConfigRequestBody(
     attempt_number=366480,
@@ -285,10 +285,10 @@ For worker to register the workflow id in attempt.
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.SetWorkflowInAttemptRequestBody(
     attempt_number=413780,
@@ -310,10 +310,10 @@ Should only called from worker, to write result from discover activity back to D
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.SourceDiscoverSchemaWriteRequestBody(
     catalog=shared.AirbyteCatalog(

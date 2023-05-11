@@ -11,10 +11,10 @@ Try sending a notifications
 ### Example Usage
 
 ```python
-import airbyte_test
-from airbyte_test.models import shared
+import airbyte_oss
+from airbyte_oss.models import shared
 
-s = airbyte_test.AirbyteTest()
+s = airbyte_oss.AirbyteOss()
 
 req = shared.Notification(
     customerio_configuration={
